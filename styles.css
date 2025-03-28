@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca&display=swap");
 
 * {
   box-sizing: border-box;
@@ -38,21 +38,21 @@ body {
 }
 
 :root {
-    /* Primary colors */
-    --bright-orange: hsl(31, 77%, 52%);
-    --dark-cyan: hsl(184, 100%, 22%);
-    --very-dark-cyan: hsl(179, 100%, 13%);
+  /* Primary colors */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
 
-    /* Neutral Colors */
+  /* Neutral Colors */
 
-    /* paragraphs */
-    --transparent-white: hsla(0, 0%, 100%, 0.75);
-    /* background, headings, buttons */
-    --very-light-gray: hsl(0, 0%, 95%);
+  /* paragraphs */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* background, headings, buttons */
+  --very-light-gray: hsl(0, 0%, 95%);
 
-    /* Fonts */
-    --lexend-deca: 'Lexend Deca', sans-serif;
-    --big-shoulders: "Big Shoulders", sans-serif;
+  /* Fonts */
+  --lexend-deca: "Lexend Deca", sans-serif;
+  --big-shoulders: "Big Shoulders", sans-serif;
 }
 
 /* .lexend-deca-<uniquifier> {
@@ -62,7 +62,7 @@ body {
     font-style: normal;
   } */
 
-  /* .big-shoulders-<uniquifier> {
+/* .big-shoulders-<uniquifier> {
     font-family: "Big Shoulders", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
@@ -70,12 +70,63 @@ body {
   } */
 
 body {
-    font-size: 15px;
+  font-size: 15px;
+  display: grid;
+  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 h2 {
-    /* font-family: var(--lexend-deca); */
-    font-family: var(--big-shoulders);
+  font-family: var(--big-shoulders);
+}
+
+.car-container {
+  width: 1400px;
+}
+
+.car-container > :nth-child(1) {
+  background-color: var(--bright-orange);
+}
+
+.car-container > :nth-child(1) button {
+  color: var(--bright-orange);
+}
+
+.car-container > :nth-child(2) {
+  background-color: var(--dark-cyan);
+}
+
+.car-container > :nth-child(2) button {
+  color: var(--dark-cyan);
+}
+
+.car-container > :nth-child(3) {
+  background-color: var(--very-dark-cyan);
+}
+
+.car-container > :nth-child(3) button {
+  color: var(--very-dark-cyan);
+}
+
+.car-column h2 {
+  color: var(--very-light-gray);
+}
+
+.car-column p {
+  color: var(--transparent-white);
+}
+
+.car-column button {
+  background: none;
+  border: none;
+  font-family: var(--lexend-deca);
+  background-color: var(--very-light-gray);
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
 }
 
 .attribution {
@@ -85,3 +136,7 @@ h2 {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* @media screen and(min-width: 992px) {
+
+} */
