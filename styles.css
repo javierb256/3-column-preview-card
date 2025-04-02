@@ -83,14 +83,17 @@ body {
 h2 {
   font-family: var(--big-shoulders);
   font-size: 2.5rem;
-  margin: 2rem 0 ;
+  margin: 2rem 0;
 }
 
 .car-container {
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   display: flex;
-  width: 1400px;
-  height: 700px;
+  /* width: 1400px;
+  height: 700px; */
+  width: 1345px;
+  height: 600px;
+  overflow: hidden;
 }
 
 .car-container > :nth-child(1) {
@@ -101,6 +104,12 @@ h2 {
   color: var(--bright-orange);
 }
 
+.car-container > :nth-child(1) button:hover {
+  border: 2px solid white;
+  background-color: var(--bright-orange);
+  color: white;
+}
+
 .car-container > :nth-child(2) {
   background-color: var(--dark-cyan);
 }
@@ -109,12 +118,24 @@ h2 {
   color: var(--dark-cyan);
 }
 
+.car-container > :nth-child(2) button:hover {
+  border: 2px solid white;
+  background-color: var(--dark-cyan);
+  color: white;
+}
+
 .car-container > :nth-child(3) {
   background-color: var(--very-dark-cyan);
 }
 
 .car-container > :nth-child(3) button {
   color: var(--very-dark-cyan);
+}
+
+.car-container > :nth-child(3) button:hover {
+  border: 2px solid white;
+  background-color: var(--very-dark-cyan);
+  color: white;
 }
 
 .car-column {
@@ -130,6 +151,9 @@ h2 {
 .car-column p {
   color: var(--transparent-white);
   margin-bottom: 2rem;
+  font-size: 1.2rem;
+  width: 80%;
+  line-height: 35px;
 }
 
 .car-column button {
@@ -137,8 +161,15 @@ h2 {
   border: none;
   font-family: var(--lexend-deca);
   background-color: var(--very-light-gray);
-  padding: 0.7rem 1.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 2rem;
+  max-width: 173px;
+  font-size: 1.1rem;
+  margin-top: auto;
+}
+
+.car-column button:hover {
+  cursor: pointer;
 }
 
 .attribution {
