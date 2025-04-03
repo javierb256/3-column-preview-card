@@ -91,8 +91,9 @@ h2 {
   display: flex;
   /* width: 1400px;
   height: 700px; */
-  width: 1345px;
-  height: 600px;
+  max-width: 1345px;
+  width: 80%;
+  min-height: 600px;
   overflow: hidden;
 }
 
@@ -180,6 +181,36 @@ h2 {
   color: hsl(228, 45%, 44%);
 }
 
-/* @media screen and(min-width: 992px) {
+@media screen and (max-width: 1200px){
+  .car-column p {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
 
-} */
+@media screen and (max-width: 900px){
+  .car-column p {
+    margin-bottom: 1rem;
+    line-height: 26px;
+  }
+
+  .car-column h2 {
+    font-size: 2.2rem;
+    margin: 1.5rem 0;
+  }
+
+  .car-column button {
+    font-size: 1rem;
+    padding: .8rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 760px){
+  body {
+    min-height: 100vh;
+  }
+
+  .car-container{
+    flex-direction: column;
+  }
+}
