@@ -208,9 +208,28 @@ h2 {
 @media screen and (max-width: 760px){
   body {
     min-height: 100vh;
+    height: 180vh;
   }
 
   .car-container{
     flex-direction: column;
+    width: 90%;
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 380px){
+  body {
+    height: 190vh;
+  }
+
+  .car-column button {
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  body {
+    height: 220vh;
   }
 }
