@@ -55,20 +55,6 @@ body {
   --big-shoulders: "Big Shoulders", sans-serif;
 }
 
-/* .lexend-deca-<uniquifier> {
-    font-family: "Lexend Deca", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-  } */
-
-/* .big-shoulders-<uniquifier> {
-    font-family: "Big Shoulders", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  } */
-
 body {
   font-size: 15px;
   display: grid;
@@ -89,8 +75,6 @@ h2 {
 .car-container {
   border-radius: 0.5rem;
   display: flex;
-  /* width: 1400px;
-  height: 700px; */
   max-width: 1345px;
   width: 80%;
   min-height: 600px;
@@ -181,14 +165,14 @@ h2 {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
   .car-column p {
     font-size: 1rem;
     width: 100%;
   }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
   .car-column p {
     margin-bottom: 1rem;
     line-height: 26px;
@@ -201,24 +185,24 @@ h2 {
 
   .car-column button {
     font-size: 1rem;
-    padding: .8rem 0.5rem;
+    padding: 0.8rem 0.5rem;
   }
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 760px) {
   body {
     min-height: 100vh;
     height: 180vh;
   }
 
-  .car-container{
+  .car-container {
     flex-direction: column;
     width: 90%;
     min-height: 100vh;
   }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 380px) {
   body {
     height: 190vh;
   }
@@ -228,7 +212,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
   body {
     height: 220vh;
   }
